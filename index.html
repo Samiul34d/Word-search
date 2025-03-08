@@ -159,6 +159,27 @@
       color: white;
     }
 
+    /* Contact Section */
+    .contact-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .contact-section a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
     /* Dark Mode Toggle */
     .dark-mode-toggle {
       position: fixed;
@@ -228,7 +249,7 @@
     <div class="search-bar">
       <input type="text" id="search-input" placeholder="Enter a word...">
       <button onclick="searchWord()">Search</button>
-      <button class="mic-icon" onclick="startVoiceSearch()">ðŸŽ¤</button>
+      <button class="mic-icon" onclick="startVoiceSearch()">🎤</button>
     </div>
 
     <!-- Word Details -->
@@ -245,9 +266,15 @@
     <!-- Made By Section -->
     <div class="made-by">
       Made by <strong>Samiul</strong>
-      
-    If you have any questions or face any issues, feel free to contact me. Happy learning!
-   https://www.facebook.com/share/18ekW7AQ4o/</div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <p>
+        If you have any questions or face any issues, feel free to contact me. Happy learning! 😊<br>
+        <a href="https://www.facebook.com/share/18ekW7AQ4o/" target="_blank">Contact Me on Facebook</a>
+      </p>
+    </div>
 
     <!-- Dark Mode Toggle -->
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
@@ -334,4 +361,4 @@
     fetchWordOfTheDay();
   </script>
 </body>
-</html>
+  </html>
